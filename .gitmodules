@@ -1,3 +1,6 @@
 [submodule "backend"]
 	path = backend
 	url = git@github.com:RabidSQL/backend.git
+[submodule "ui/qt"]
+	path = ui/qt
+	url = git@github.com:RabidSQL/ui-qt
