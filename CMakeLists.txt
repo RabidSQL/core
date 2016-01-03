@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.2.2)
 project(RabidSQL)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -std=c++0x")
+find_package(Qt5 REQUIRED COMPONENTS core gui widgets PATHS /Users/Chelsea/Qt/5.5/clang_64/lib/cmake REQUIRED)
 LINK_DIRECTORIES(
     /usr/local/mysql/lib
 )
@@ -20,4 +21,6 @@ TARGET_LINK_LIBRARIES(${PROJECT_NAME}
     UI
     MySQL
     pthread
+    Qt5::Core
+    Qt5::Widgets
 )
